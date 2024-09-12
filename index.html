@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Interactive Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Apollo&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Personal Mood Tracker</h1>
+    </nav>
+</header>
+<main>
+    <div class="container" id="inputContainer">
+        <section class="input-section">
+            <label for="nameInput">Enter your name:</label>
+            <input type="text" id="nameInput" placeholder="Your name" />
+            <button id="submitBtn">Submit</button>
+        </section>
+    </div>
+    <div id="moodCardsContainer" class="mood-cards-container hidden">
+        <!-- Mood cards will be dynamically inserted here -->
+    </div>
+    <section id="outputSection" class="output-section hidden">
+        <div class="glass-box">
+            <h2 id="greeting"></h2>
+            <p id="suggestions"></p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2024 Mood Tracker Inc.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
